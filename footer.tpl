@@ -39,16 +39,16 @@
                                     <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 text-center">
                                         <h6 class="text-uppercase fw-bold mb-4">Page</h6>
                                         <p>
-                                            <a href="" class="text-reset">Accueil</a>
+                                            <a href="../" class="text-reset">Accueil</a>
                                         </p>
                                         <p>
-                                            <a href="products.php" class="text-reset">Sneakers</a>
+                                            <a href="../products.php" class="text-reset">Sneakers</a>
                                         </p>
                                         <p>
-                                            <a href="nettoyage.php" class="text-reset">Nettoyage</a>
+                                            <a href="../nettoyage.php" class="text-reset">Nettoyage</a>
                                         </p>
                                         <p>
-                                            <a href="actu.php" class="text-reset">Actualité</a>
+                                            <a href="../actu.php" class="text-reset">Actualité</a>
                                         </p>
                                     </div>
                                     <!-- / PAGE -->
@@ -57,16 +57,16 @@
                                     <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 text-center">
                                         <h6 class="text-uppercase fw-bold mb-4">Mentions</h6>
                                         <p>
-                                            <a href="panel/clientarea.php" class="text-reset">Espace Client</a>
+                                            <a href="clientarea.php" class="text-reset">Espace Client</a>
                                         </p>
                                         <p>
-                                            <a href="panel/cart.php?a=view" class="text-reset">Mon Panier</a>
+                                            <a href="cart.php?a=view" class="text-reset">Mon Panier</a>
                                         </p>
                                         <p>
-                                            <a href="about.php" class="text-reset">Terme d'utilisation</a>
+                                            <a href="../about.php" class="text-reset">Terme d'utilisation</a>
                                         </p>
                                         <p>
-                                            <a href="panel/contact.php" class="text-reset">Contactez-nous</a>
+                                            <a href="contact.php" class="text-reset">Contactez-nous</a>
                                         </p>
                                     </div>
                                     <!-- / MENTION-->

@@ -25,12 +25,6 @@
     {include file="$template/includes/validateuser.tpl"}
     {include file="$template/includes/verifyemail.tpl"}
 
-    {if $templatefile == 'homepage'}
-        {if $registerdomainenabled || $transferdomainenabled}
-            {include file="$template/includes/domain-search.tpl"}
-        {/if}
-    {/if}
-
     <section id="main-body">
         <div class="{if !$skipMainBodyContainer}container{/if}">
             <div class="row">

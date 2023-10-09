@@ -10,19 +10,19 @@
             </a>
         </div>
         <ul class="col-6">
-            <li><a href="index.php">Accueil</a></li>
+            <li><a href="../index.php">Accueil</a></li>
             <li>
-                <a href="products.php">Sneakers</a>
+                <a href="../products.php">Sneakers</a>
             </li>
-            <li><a href="nettoyage.php">Nettoyage</a></li>
-            <li><a href="actu.php">Actualité</a></li>
+            <li><a href="../nettoyage.php">Nettoyage</a></li>
+            <li><a href="../actu.php">Actualité</a></li>
         </ul>
         <ul class="col-2 connexion">
 
-            <a href="panel/cart.php?a=view" class="panier">
+            <a href="cart.php?a=view" class="panier">
                 <i class="fa-solid fa-basket-shopping"></i>
             </a>
-            <a style="font-size: 1rem;" href="panel/clientarea.php" type="button" class="btn btn-danger">Espace Client</a>
+            <a style="font-size: 1rem;" href="clientarea.php" type="button" class="btn btn-danger">Espace Client</a>
         </ul>
     </div>
 </nav>
@@ -31,7 +31,7 @@
 <header id="nav-mobile">
 
 
-    <a href="panel/cart.php?a=view" class="panier panierMobile">
+    <a href="cart.php?a=view" class="panier panierMobile">
         <i class="fa-solid fa-basket-shopping"></i>
     </a>
 
@@ -48,11 +48,11 @@
 
     <nav>
         <ul>
-            <li><a href="index.php">Accueil</a></li>
-            <li><a href="products.php">Sneakers</a></li>
-            <li><a href="nettoyage.php">Nettoyage</a></li>
-            <li><a href="actu.php">Actualité</a></li>
-            <li><a href="panel/clientarea.php" class="burger-btn-connect">Espace Client</a></li>
+            <li><a href="../index.php">Accueil</a></li>
+            <li><a href="../products.php">Sneakers</a></li>
+            <li><a href="../nettoyage.php">Nettoyage</a></li>
+            <li><a href="../actu.php">Actualité</a></li>
+            <li><a href="clientarea.php" class="burger-btn-connect">Espace Client</a></li>
         </ul>
     </nav>
 </header>
