@@ -35,7 +35,7 @@
         <i class="fa-solid fa-basket-shopping"></i>
     </a>
 
-    <h1><a href="./" class="titleMobile"><img class="img-mobile" src="assets/logoDetoure.png">Palais de la sneaks</a></h1>
+    <h1><a href="./" class="titleMobile"><img class="img-mobile" src="../assets/logoDetoure.png">Palais de la sneaks</a></h1>
 
     <input id="burger" type="checkbox" />
 
@@ -342,7 +342,7 @@
     }
 
     .panierMobile {
-        position: absolute;
+        position: fixed;
         top: 38px;
         right: 63px;
         z-index: 4;
