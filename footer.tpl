@@ -11,127 +11,112 @@
         </div>
     </section>
 
-    <footer id="footer" class="footer">
-        <div class="container">
-            <ul class="list-inline mb-7 text-center float-lg-right">
-                {include file="$template/includes/social-accounts.tpl"}
 
-                {if $languagechangeenabled && count($locales) > 1 || $currencies}
-                    <li class="list-inline-item">
-                        <button type="button" class="btn" data-toggle="modal" data-target="#modalChooseLanguage">
-                            <div class="d-inline-block align-middle">
-                                <div class="iti-flag {if $activeLocale.countryCode === 'GB'}us{else}{$activeLocale.countryCode|lower}{/if}"></div>
-                            </div>
-                            {$activeLocale.localisedName}
-                            /
-                            {$activeCurrency.prefix}
-                            {$activeCurrency.code}
-                        </button>
-                    </li>
-                {/if}
-            </ul>
 
-            <ul class="nav justify-content-center justify-content-lg-start mb-7">
-                <li class="nav-item">
-                    <a class="nav-link" href="{$WEB_ROOT}/contact.php">
-                        {lang key='contactus'}
-                    </a>
-                </li>
-                {if $acceptTOS}
-                    <li class="nav-item">
-                        <a class="nav-link" href="{$tosURL}" target="_blank">{lang key='ordertos'}</a>
-                    </li>
-                {/if}
-            </ul>
+{* MY FOOTER *}
 
-            <p class="copyright mb-0">
-                {lang key="copyrightFooterNotice" year=$date_year company=$companyname}
-            </p>
-        </div>
-    </footer>
+                    <!-- Footer -->
+                    <footer class="text-center text-lg-start bg-light text-muted">
 
-    <div id="fullpage-overlay" class="w-hidden">
-        <div class="outer-wrapper">
-            <div class="inner-wrapper">
-                <img src="{$WEB_ROOT}/assets/img/overlay-spinner.svg" alt="">
-                <br>
-                <span class="msg"></span>
-            </div>
-        </div>
-    </div>
 
-    <div class="modal system-modal fade" id="modalAjax" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title"></h5>
-                    <button type="button" class="close" data-dismiss="modal">
-                        <span aria-hidden="true">&times;</span>
-                        <span class="sr-only">{lang key='close'}</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    {lang key='loading'}
-                </div>
-                <div class="modal-footer">
-                    <div class="float-left loader">
-                        <i class="fas fa-circle-notch fa-spin"></i>
-                        {lang key='loading'}
-                    </div>
-                    <button type="button" class="btn btn-default" data-dismiss="modal">
-                        {lang key='close'}
-                    </button>
-                    <button type="button" class="btn btn-primary modal-submit">
-                        {lang key='submit'}
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <form method="get" action="{$currentpagelinkback}">
-        <div class="modal modal-localisation" id="modalChooseLanguage" tabindex="-1" role="dialog">
-            <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-
-                        {if $languagechangeenabled && count($locales) > 1}
-                            <h5 class="h5 pt-5 pb-3">{lang key='chooselanguage'}</h5>
-                            <div class="row item-selector">
-                            <input type="hidden" name="language" value="">
-                                {foreach $locales as $locale}
-                                    <div class="col-4">
-                                        <a href="#" class="item{if $language == $locale.language} active{/if}" data-value="{$locale.language}">
-                                            {$locale.localisedName}
-                                        </a>
+                        <!-- Section: Links  -->
+                        <section class="piedPage">
+                            <div class="container text-center text-md-start pt-3">
+                                <!-- Grid row -->
+                                <div class="row mt-3">
+                                    <!-- Grid column -->
+                                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                                        <!-- Content -->
+                                        <h6 class="text-uppercase fw-bold mb-4">
+                                            <i class="fa-solid fa-shoe-prints"></i>Palais de la sneaks
+                                        </h6>
+                                        <p>
+                                            Fondée en 2021 par Loic et Anthony. Nous vous proposons une sélection exclusive de chaussures de sport tendance pour tous les passionnés de mode et de confort.</p>
                                     </div>
-                                {/foreach}
-                            </div>
-                        {/if}
-                        {if !$loggedin && $currencies}
-                            <p class="h5 pt-5 pb-3">{lang key='choosecurrency'}</p>
-                            <div class="row item-selector">
-                                <input type="hidden" name="currency" value="">
-                                {foreach $currencies as $selectCurrency}
-                                    <div class="col-4">
-                                        <a href="#" class="item{if $activeCurrency.id == $selectCurrency.id} active{/if}" data-value="{$selectCurrency.id}">
-                                            {$selectCurrency.prefix} {$selectCurrency.code}
-                                        </a>
+                                    <!-- Grid column -->
+
+                                    <!-- PAGE -->
+                                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 text-center">
+                                        <h6 class="text-uppercase fw-bold mb-4">Page</h6>
+                                        <p>
+                                            <a href="" class="text-reset">Accueil</a>
+                                        </p>
+                                        <p>
+                                            <a href="products.php" class="text-reset">Sneakers</a>
+                                        </p>
+                                        <p>
+                                            <a href="nettoyage.php" class="text-reset">Nettoyage</a>
+                                        </p>
+                                        <p>
+                                            <a href="actu.php" class="text-reset">Actualité</a>
+                                        </p>
                                     </div>
-                                {/foreach}
+                                    <!-- / PAGE -->
+
+                                    <!-- MEINTION -->
+                                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 text-center">
+                                        <h6 class="text-uppercase fw-bold mb-4">Mentions</h6>
+                                        <p>
+                                            <a href="panel/clientarea.php" class="text-reset">Espace Client</a>
+                                        </p>
+                                        <p>
+                                            <a href="panel/cart.php?a=view" class="text-reset">Mon Panier</a>
+                                        </p>
+                                        <p>
+                                            <a href="about.php" class="text-reset">Terme d'utilisation</a>
+                                        </p>
+                                        <p>
+                                            <a href="panel/contact.php" class="text-reset">Contactez-nous</a>
+                                        </p>
+                                    </div>
+                                    <!-- / MENTION-->
+
+                                    <!-- A PROPOS DE NOUS -->
+                                    <div class="col-md-4 col-lg-3 col-xl-4 mx-auto mb-md-0 mb-4">
+                                        <h6 class="text-uppercase fw-bold mb-4">A propos de nous</h6>
+                                        <p>
+                                            <i class="fas fa-envelope me-3"></i>
+                                            palaisdelasneaks@gmail.com
+                                        </p>
+                                        <p><i class="fas fa-phone me-3"></i>06 51 72 66 93</p>
+                                        <p><i class="fa-solid fa-house"></i>52 boulevard des castors, 69005 Lyon</p>
+                                    </div>
+                                    <!-- /A PROPOS DE NOUS -->
+                                </div>
+                                <!-- Grid row -->
                             </div>
-                        {/if}
-                    </div>
-                    <div class="modal-footer">
-                        <button type="submit" class="btn btn-default">{lang key='apply'}</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </form>
+                        </section>
+                        <!-- Section: Links  -->
+
+                        <!-- Copyright -->
+                        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+                            💙 Create By <a class="text-reset fw-bold" href="https://tyrolium.fr/">Tyrolium</a> 💙<br />
+                            Pour vos sites internet faites appel à <a style="color: black" href="http://tyrolium.fr">nous</a> !
+                        </div>
+                        <!-- Copyright -->
+                    </footer>
+                    <!-- Footer -->
+
+
+
+
+
+
+                    <style>
+
+                        .piedPage {
+                            box-shadow: 0px -10px 12px rgba(0, 0, 0, 0.1);
+                        }
+
+                    </style>
+
+
+
+
+
+
+
+
 
     {if !$loggedin && $adminLoggedIn}
         <a href="{$WEB_ROOT}/logout.php?returntoadmin=1" class="btn btn-return-to-admin" data-toggle="tooltip" data-placement="bottom" title="{if $adminMasqueradingAsClient}{lang key='adminmasqueradingasclient'} {lang key='logoutandreturntoadminarea'}{else}{lang key='adminloggedin'} {lang key='returntoadminarea'}{/if}">
