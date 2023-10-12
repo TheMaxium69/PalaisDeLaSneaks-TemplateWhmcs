@@ -5,7 +5,7 @@
 
         <div class="logo col-3">
             <a class="navbar-brand" href="#">
-                <img src="../assets/logoDetoure.png" alt="Logo" class="d-inline-block align-text-top">
+                <img src="../app/assets/logoDetoure.png" alt="Logo" class="d-inline-block align-text-top">
                 Palais de la sneaks
             </a>
         </div>
@@ -15,7 +15,8 @@
                 <a href="../products.php">Sneakers</a>
             </li>
             <li><a href="../nettoyage.php">Nettoyage</a></li>
-            <li><a href="../actu.php">Actualité</a></li>
+            <li><a href="?rp=/announcements">Actualité</a></li>
+            <li><a href="../rachat.php">Rachat</a></li>
         </ul>
         <ul class="col-2 connexion">
 
@@ -35,7 +36,7 @@
         <i class="fa-solid fa-basket-shopping"></i>
     </a>
 
-    <h1><a href="./" class="titleMobile"><img class="img-mobile" src="../assets/logoDetoure.png">Palais de la sneaks</a></h1>
+    <h1><a href="./" class="titleMobile"><img class="img-mobile" src="../app/assets/logoDetoure.png">Palais de la sneaks</a></h1>
 
     <input id="burger" type="checkbox" />
 
@@ -51,7 +52,8 @@
             <li><a href="../index.php">Accueil</a></li>
             <li><a href="../products.php">Sneakers</a></li>
             <li><a href="../nettoyage.php">Nettoyage</a></li>
-            <li><a href="../actu.php">Actualité</a></li>
+            <li><a href="../index.php?rp=/announcements">Actualité</a></li>
+            <li><a href="../rachat.php">Rachat</a></li>
             <li><a href="clientarea.php" class="burger-btn-connect">Espace Client</a></li>
         </ul>
     </nav>
