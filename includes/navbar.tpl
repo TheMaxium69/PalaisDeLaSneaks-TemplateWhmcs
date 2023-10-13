@@ -15,7 +15,7 @@
                 <a href="../products.php">Sneakers</a>
             </li>
             <li><a href="../nettoyage.php">Nettoyage</a></li>
-            <li><a href="?rp=/announcements">Actualité</a></li>
+            <li><a href="index.php?rp=/announcements">Actualité</a></li>
             <li><a href="../rachat.php">Rachat</a></li>
         </ul>
         <ul class="col-2 connexion">

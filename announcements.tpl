@@ -6,7 +6,7 @@
             {foreach $announcements as $announcement}
                 <div class="announcement">
                     <h1>
-                        <a href="{routePath('announcement-view', $announcement.id, $announcement.urlfriendlytitle)}">
+                        <a class="titleAnnouce" href="{routePath('announcement-view', $announcement.id, $announcement.urlfriendlytitle)}">
                             {$announcement.title}
                         </a>
                         {if $announcement.editLink}

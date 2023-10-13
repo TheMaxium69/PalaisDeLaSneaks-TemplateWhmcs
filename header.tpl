@@ -41,4 +41,9 @@
                     {/if}
                 </div>
             {/if}
-            <div class="{if !$inShoppingCart && ($primarySidebar->hasChildren() || $secondarySidebar->hasChildren())}col-lg-8 col-xl-9{else}col-12{/if} primary-content">
+
+            {if $smarty.server.REQUEST_URI == '/PalaisDeLaSneaks-WebSite/panel/index.php?rp=/announcements'}
+            <div contentName="{$smarty.server.REQUEST_URI}" class="col-12 primary-content">
+            {else}
+            <div contentName="{$smarty.server.REQUEST_URI}" class="{if !$inShoppingCart && ($primarySidebar->hasChildren() || $secondarySidebar->hasChildren())}col-lg-8 col-xl-9{else}col-12{/if} primary-content">
+            {/if}
