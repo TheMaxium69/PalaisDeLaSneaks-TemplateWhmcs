@@ -5,7 +5,7 @@
 
         <div class="logo col-3">
             <a class="navbar-brand" href="#">
-                <img src="../app/assets/logoDetoure.png" alt="Logo" class="d-inline-block align-text-top">
+                <img src="../assets/logoDetoure.png" alt="Logo" class="d-inline-block align-text-top">
                 Palais de la sneaks
             </a>
         </div>
@@ -36,7 +36,7 @@
         <i class="fa-solid fa-basket-shopping"></i>
     </a>
 
-    <h1><a href="./" class="titleMobile"><img class="img-mobile" src="../app/assets/logoDetoure.png">Palais de la sneaks</a></h1>
+    <h1><a href="./" class="titleMobile"><img class="img-mobile" src="../assets/logoDetoure.png">Palais de la sneaks</a></h1>
 
     <input id="burger" type="checkbox" />
 
