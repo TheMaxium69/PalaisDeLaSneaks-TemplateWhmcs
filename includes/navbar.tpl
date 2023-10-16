@@ -32,7 +32,7 @@
             </a>
 
             <div class="connexion">
-                <a href="panel/clientarea.php"><button class="custom-btn btn-7"><span>Espace client</span>   </button></a>
+                <a href="clientarea.php"><button class="custom-btn btn-7"><span>Espace client</span>   </button></a>
             </div>
         </ul>
     </div>
