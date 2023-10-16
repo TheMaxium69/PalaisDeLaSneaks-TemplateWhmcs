@@ -54,7 +54,13 @@
             <li><a href="../nettoyage.php">Nettoyage</a></li>
             <li><a href="../index.php?rp=/announcements">Actualité</a></li>
             <li><a href="../rachat.php">Rachat</a></li>
-            <li><a href="clientarea.php" class="burger-btn-connect">Espace Client</a></li>
+            <div class="connexion">
+                <a href="panel/clientarea.php">
+                    <button class="custom-btn btn-7">
+                        <span>Espace client</span>   
+                    </button>
+                </a>
+            </div>
         </ul>
     </nav>
 </header>
