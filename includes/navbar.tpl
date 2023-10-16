@@ -5,7 +5,7 @@
 
         <div class="logo col-3">
             <a class="navbar-brand" href="#">
-                <img src="../assets/logoDetoure.png" alt="Logo" class="d-inline-block align-text-top">
+                <img src="../app/assets/logoDetoure.png" alt="Logo" class="d-inline-block align-text-top">
                 Palais de la sneaks
             </a>
         </div>
@@ -18,12 +18,22 @@
             <li><a href="index.php?rp=/announcements">Actualité</a></li>
             <li><a href="../rachat.php">Rachat</a></li>
         </ul>
-        <ul class="col-2 connexion">
+        {*<ul class="col-2 connexion">
 
             <a href="cart.php?a=view" class="panier">
                 <i class="fa-solid fa-basket-shopping"></i>
             </a>
             <a style="font-size: 1rem;" href="clientarea.php" type="button" class="btn btn-danger">Espace Client</a>
+        </ul>*}
+        <ul class="col-2">
+
+            <a href="panel/cart.php?a=view" class="panier">
+                <i class="fa-solid fa-basket-shopping"></i>
+            </a>
+
+            <div class="connexion">
+                <a href="panel/clientarea.php"><button class="custom-btn btn-7"><span>Espace client</span>   </button></a>
+            </div>
         </ul>
     </div>
 </nav>
@@ -55,7 +65,7 @@
             <li><a href="../index.php?rp=/announcements">Actualité</a></li>
             <li><a href="../rachat.php">Rachat</a></li>
             <div class="connexion">
-                <a href="panel/clientarea.php">
+                <a href="clientarea.php">
                     <button class="custom-btn btn-7">
                         <span>Espace client</span>   
                     </button>
@@ -69,6 +79,227 @@
     /***********
     NAVBAR
  ***********/
+
+ .row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+ #nav-desktop{
+    background: #F8F9FA;
+    box-shadow: 00px 2px 28px 0px rgba(0, 0, 0, 0.25);
+}
+
+#nav-desktop ul{
+    margin-bottom: unset;
+}
+
+#nav-desktop:after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+#nav-desktop .logo {
+    float: left;
+    color: black;
+    font-size: 27px;
+    font-weight: 600;
+    line-height: 70px;
+    padding-left: 60px;
+    /* display: none; */
+}
+
+#nav-desktop ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-right: 40px;
+    position: relative;
+}
+
+#nav-desktop ul li {
+   float: left;
+    display: inline-block;
+    margin : 0 5px
+
+}
+
+#nav-desktop ul li a {
+    color: black;
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 18px;
+    padding: 8px 15px;
+}
+
+#nav-desktop ul li a:hover {
+    color: red;
+    text-decoration: underline red;
+}
+
+#nav-desktop ul ul {
+    position: absolute;
+    top: 90px;
+    opacity: 0;
+    visibility: hidden;
+    background-color: white;
+    transition: top.3s;
+}
+#nav-desktop ul li:hover > ul {
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+}
+
+#nav-desktop ul ul li {
+    position: relative;
+    margin: 0px;
+    width: 150px;
+    float: none;
+    display: list-item;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+#nav-desktop ul ul li a {
+    line-height: 50px;
+}
+
+
+#nav-desktop .panier{
+    align-items: center;
+    font-size: 30px;
+    margin-top: 15px;
+} 
+
+/* Bouton espace client */
+#nav-desktop .connexion {
+    width: 90%;
+    text-align: center;
+    
+}
+
+#nav-desktop  button {
+    margin: 20px;
+  }
+
+#nav-desktop .custom-btn {
+width: 130px;
+height: 40px;
+color: white;
+border-radius: 5px;
+padding: 10px 25px;
+font-family: 'Lato', sans-serif;
+font-weight: 500;
+background: transparent;
+cursor: pointer;
+transition: all 0.3s ease;
+position: relative;
+display: inline-block;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+outline: none;
+}
+
+#nav-desktop .btn-7 {
+    background-color: red;
+      line-height: 42px;
+      padding: 0;
+      border: none;
+    }
+
+#nav-desktop.btn-7 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    }
+
+    #nav-desktop .btn-7:before,
+    #nav-desktop .btn-7:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  background: red;
+  box-shadow:
+   -7px -7px 20px 0px rgba(255,255,255,.9),
+   -4px -4px 5px 0px rgba(255,255,255,.9),
+   7px 7px 20px 0px rgba(0,0,0,.2),
+   4px 4px 5px 0px rgba(0,0,0,.3);
+  transition: all 0.3s ease;
+}
+#nav-desktop .btn-7:before{
+   height: 0%;
+   width: 2px;
+}
+#nav-desktop .btn-7:after {
+  width: 0%;
+  height: 2px;
+}
+#nav-desktop .btn-7:hover{
+  color: red;
+  background: transparent;
+}
+#nav-desktop .btn-7:hover:before {
+  height: 100%;
+}
+#nav-desktop .btn-7:hover:after {
+  width: 100%;
+}
+#nav-desktop .btn-7 span:before,
+#nav-desktop .btn-7 span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background: red;
+  box-shadow:
+   -7px -7px 20px 0px rgba(255,255,255,.9),
+   -4px -4px 5px 0px rgba(255,255,255,.9),
+   7px 7px 20px 0px rgba(0,0,0,.2),
+   4px 4px 5px 0px rgba(0,0,0,.3);
+  transition: all 0.3s ease;
+}
+#nav-desktop .btn-7 span:before {
+  width: 2px;
+  height: 0%;
+}
+#nav-desktop .btn-7 span:after {
+  height: 2px;
+  width: 0%;
+}
+#nav-desktop .btn-7 span:hover:before {
+  height: 100%;
+}
+#nav-desktop .btn-7 span:hover:after {
+  width: 100%;
+}
+
+
+
+
+#nav-desktop .navbar-item.is-mega {
+    position: static;
+}
+#nav-desktop .navbar-item.is-mega .is-mega-menu-title {
+    margin-bottom: 0;
+    padding: 0.375rem 1rem;
+}
+
+#nav-desktop .navbar-brand img {
+    width: 64px;
+    height: 64px;
+    margin-top: -15px;
+}
+
+#nav-desktop .navbar-brand{
+    font-size: 20px;
+    font-weight: 900;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
 
 
     @media(max-width: 1200px){
@@ -178,15 +409,6 @@
         line-height: 50px;
     }
 
-    #nav-desktop .connexion{
-        display: flex;
-        justify-content: end;
-        align-items: center;
-    }
-
-    #nav-desktop .connexion button {
-        height: 50px;
-    }
 
     #nav-desktop .navbar-item.is-mega {
         position: static;
