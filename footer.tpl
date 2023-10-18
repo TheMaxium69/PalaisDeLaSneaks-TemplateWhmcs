@@ -50,6 +50,9 @@
                                         <p>
                                             <a href="../actu.php" class="text-reset">Actualité</a>
                                         </p>
+                                        <p>
+                                            <a href="../rachat.php" class="text-reset">Rachat</a>
+                                        </p>
                                     </div>
                                     <!-- / PAGE -->
 

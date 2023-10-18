@@ -13365,3 +13365,13 @@ table.table-solid-bottom-border-light-gray {
 .MaxRed{
     color: #dc3545;
 }
+
+body{
+    background: white!important;
+}
+
+.card{
+    box-shadow: -1px 2px 30px -12px rgb(32, 32, 32);
+    /*border-radius: 0.9rem;*/
+}
+
