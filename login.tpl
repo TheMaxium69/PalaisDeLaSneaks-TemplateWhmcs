@@ -53,7 +53,7 @@
         </div>
         <div class="card-footer px-md-5">
             <small>{lang key='userLogin.notRegistered'}</small>
-            <a href="{$WEB_ROOT}/register.php" class="small font-weight-bold">{lang key='userLogin.createAccount'}</a>
+            <a href="{$WEB_ROOT}/register.php" class="MaxRed small font-weight-bold">{lang key='userLogin.createAccount'}</a>
         </div>
     </div>
 </form>
