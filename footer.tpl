@@ -97,6 +97,52 @@
                             Pour vos sites internet faites appel à <a style="color: black" href="http://tyrolium.fr">nous</a> !
                         </div>
                         <!-- Copyright -->
+
+                        <script>
+                            var nomDeDomaine = document.querySelector("div[menuitemname='Register a New Domain']");
+                            if(nomDeDomaine !== null){
+                                nomDeDomaine.style.display = "none";
+                            }
+
+                            var commanderUnNouveau = document.querySelector("#Secondary_Sidebar-Client_Shortcuts-Order_New_Services");
+                            if(commanderUnNouveau !== null){
+                                commanderUnNouveau.style.display = "none";
+                            }
+
+                            var enregistrerUnNom = document.querySelector("#Secondary_Sidebar-Client_Shortcuts-Register_New_Domain");
+                            if(enregistrerUnNom !== null){
+                                enregistrerUnNom.style.display = "none";
+                            }
+
+                            var changeTitleDomaine = document.querySelector("div[contentname='/PalaisDeLaSneaks-WebSite/panel/clientarea.php'] div:nth-child(1) div:nth-child(1) div:nth-child(2) a div:nth-child(3)");
+                            if(changeTitleDomaine !== null){
+                                var listeChaussure = changeTitleDomaine.innerHTML.replace("Mes domaines", "LISTE CHAUSSURE");
+                                changeTitleDomaine.innerHTML = listeChaussure;
+                            }
+
+                            var changeLinkDomaine = document.querySelector("div[contentname='/PalaisDeLaSneaks-WebSite/panel/clientarea.php'] div:nth-child(1) div:nth-child(1) div:nth-child(2) a");
+                            if(changeLinkDomaine !== null){
+                                changeLinkDomaine.href = "../products.php";
+                            }
+
+                            var changeNumberDomaine = document.querySelector("div[contentname='/PalaisDeLaSneaks-WebSite/panel/clientarea.php'] div:nth-child(1) div:nth-child(1) div:nth-child(2) a div:nth-child(2)");
+                            if(changeNumberDomaine !== null){
+                                changeNumberDomaine.style.visibility = "hidden";
+                            }
+
+                            var hiddenCategory = document.querySelector("div[menuitemname='Categories']");
+                            if(hiddenCategory !== null){
+                                hiddenCategory.style.display = "none";
+                            }
+
+                            var hiddenaction = document.querySelector("div[menuitemname='Actions']");
+                            if(hiddenaction !== null){
+                                hiddenaction.style.display = "none";
+                            }
+
+                        </script>
+                        
+
                     </footer>
                     <!-- Footer -->
 
