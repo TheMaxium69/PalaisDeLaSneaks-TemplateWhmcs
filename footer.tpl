@@ -94,7 +94,7 @@
                         <!-- Copyright -->
                         <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
                             💙 Create By <a class="text-reset fw-bold" href="https://tyrolium.fr/">Tyrolium</a> 💙<br />
-                            Pour vos sites internet faites appel à <a style="color: black" href="http://tyrolium.fr">nous</a> !
+                            Pour vos sites internet faites appel à <a style="color: black" href="https://tyrolium.fr">nous</a> !
                         </div>
                         <!-- Copyright -->
 

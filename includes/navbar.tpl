@@ -4,13 +4,13 @@
     <div class="row">
 
         <div class="logo col-3">
-            <a class="navbar-brand" href="/PalaisDeLaSneaks-WebSite/">
+            <a class="navbar-brand" href="../">
                 <img src="../assets/logoDetoure.png" alt="Logo" class="d-inline-block align-text-top">
                 Palais de la sneaks
             </a>
         </div>
         <ul class="col-6">
-            <li><a href="../">Accueil</a></li>
+            <li><a href="../index.php">Accueil</a></li>
             <li>
                 <a href="../products.php">Sneakers</a>
             </li>
@@ -26,8 +26,7 @@
             </a>
 
             <div class="connexion">
-                <a href="clientarea.php"><button class="custom-btn btn-7"> <span>Espace client</span>   </button></a>
-
+                <a href="clientarea.php"><button class="custom-btn btn-7"> <span>Espace client</span> </button></a>
             </div>
 
         </ul>
@@ -38,11 +37,11 @@
 <header id="nav-mobile">
 
 
-    <a href="panel/cart.php?a=view" class="panier panierMobile">
+    <a href="cart.php?a=view" class="panier panierMobile">
         <i class="fa-solid fa-basket-shopping"></i>
     </a>
 
-    <h1><a href="./" class="titleMobile"><img class="img-mobile" src="assets/logoDetoure.png">Palais de la sneaks</a></h1>
+    <h1><a href="../" class="titleMobile"><img class="img-mobile" src="../assets/logoDetoure.png">Palais de la sneaks</a></h1>
 
     <input id="burger" type="checkbox" />
 
@@ -55,19 +54,14 @@
 
     <nav>
         <ul>
-            <li><a href="index.php">Accueil</a></li>
-            <li><a href="products.php">Sneakers</a></li>
-            <li><a href="nettoyage.php">Nettoyage</a></li>
-            <li><a href="panel/index.php?rp=/announcements">Actualité</a></li>
-            <li><a href="rachat.php">Rachat</a></li>
-
+            <li><a href="../index.php">Accueil</a></li>
+            <li><a href="../products.php">Sneakers</a></li>
+            <li><a href="../nettoyage.php">Nettoyage</a></li>
+            <li><a href="index.php?rp=/announcements">Actualité</a></li>
+            <li><a href="../rachat.php">Rachat</a></li>
             <li>
                 <div class="connexion">
-                    <a href="panel/clientarea.php">
-                        <button class="custom-btn btn-7">
-                            <span>Espace client</span>
-                        </button>
-                    </a>
+                    <a href="clientarea.php"><button class="custom-btn btn-7"><span>Espace client</span></button></a>
                 </div>
             </li>
         </ul>
@@ -75,9 +69,9 @@
 </header>
 
 <style>
-    /***********
-        NAVBAR
-     ***********/
+ /***********
+    NAVBAR
+ ***********/
 
 
     @media(max-width: 1300px){
@@ -345,14 +339,16 @@
 
     #nav-mobile h1 {
         position: fixed;
-        top: 0px;
-        left: 40px;
+        top: 22px;
+        left: 18px;
         z-index: 6;
-        font-size: 20px;
+        font-size: 15px;
         font-weight: 900;
         font-family: sans-serif;
         text-transform: uppercase;
     }
+
+
     #nav-mobile h1 > span {
         text-transform: none;
         opacity: 0.5;
@@ -452,13 +448,8 @@
         box-shadow: unset;
     }
 
-
-
-
-
-
     #nav-mobile .img-mobile{
-        width: 112px;
+        width: 60px;
     }
 
     #nav-mobile a:first-child{
@@ -467,6 +458,7 @@
 
     .titleMobile{
         text-decoration: none !important;
+        font-size: small;
     }
 
     .burger-btn-connect{
@@ -491,4 +483,22 @@
         font-family: sans-serif;
         text-transform: uppercase;
     }
+
+ .custom-btn {
+     width: 130px;
+     height: 40px;
+     color: #fff;
+     border-radius: 5px;
+     font-family: 'Lato', sans-serif;
+     font-weight: 500;
+     background: transparent;
+     cursor: pointer;
+     transition: all 0.3s ease;
+     position: relative;
+     display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+     outline: none;
+ }
 </style>
