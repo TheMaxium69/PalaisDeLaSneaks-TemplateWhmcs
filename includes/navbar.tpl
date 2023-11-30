@@ -474,15 +474,16 @@
         z-index: 4;
     }
 
-    #nav-mobile .custom-btn {
-        border: 0;
-        background-color: #dc3545;
-        height: 52px;
-        width: 200px;
-        font-weight: 700;
-        font-family: sans-serif;
-        text-transform: uppercase;
-    }
+ #nav-mobile .custom-btn {
+     border: 0;
+     background-color: #dc3545;
+     height: 52px;
+     max-width: 200px;
+     width: 100%;
+     font-weight: 700;
+     font-family: sans-serif;
+     text-transform: uppercase;
+ }
 
  .custom-btn {
      width: 130px;
